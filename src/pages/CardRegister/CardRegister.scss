@@ -1,0 +1,253 @@
+.cardregister-main {
+    .card-info {
+        .container {
+            .cardinfo-inner {
+                background-color: #FFE0AF;
+                border-radius: 20px;
+                padding: 30px 40px;
+                margin-bottom: 30px;
+                box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+
+                .cardinfo-text {
+                    margin: 0;
+                    font-size: 20px;
+
+                    b {
+                        font-weight: 600;
+                    }
+
+                    &.text-upper {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .card-wrap {
+        margin-bottom: 30px;
+
+        .container {
+            .cardwrap-inner {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .card-security {
+                    background-color: #FFE0AF;
+                    border-radius: 20px;
+                    padding: 45px 40px;
+                    display: flex;
+                    flex-direction: column;
+                    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+                    flex-grow: 2;
+                    margin-right: 30px;
+    
+                    .dropdown {
+                        position: relative;
+                        display: inline-block;
+                        font-size: 20px;
+                        margin-bottom: 40px;
+    
+                        .dropdown-title {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            border-bottom: 1px solid #000;
+                            cursor: pointer;
+                            font-size: 20px;
+    
+                            .title-text {
+                                margin: 0;
+                            }
+    
+                            .arrow {
+                                margin-right: 0px;
+                            }
+                        }
+                        
+                        .dropdown-content {
+                            display: none;
+                            position: absolute;
+                            background-color: #f9f9f9;
+                            padding: 12px 16px;
+                            z-index: 1;
+    
+                            .content {
+                                opacity: 0.8;
+                                background: none;
+                                font-size: 20px;
+                                border: none;
+                                cursor: pointer;
+    
+                                &:hover {
+                                    opacity: 1;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+    
+                        &:hover .dropdown-content {
+                            display: flex;
+                            flex-direction: column;
+                            width: -webkit-fill-available;
+                            align-items: flex-start;
+                        }
+                    }
+    
+                    .answer-input {
+                        background: none;
+                        border: none;
+                        border-bottom: 1px solid #000;
+                        font-size: 20px;
+                        outline: none;
+                    }
+                }
+
+                .card-type {
+                    background-color: #FFE0AF;
+                    border-radius: 20px;
+                    padding: 30px 40px;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+
+                    .cardtype-form {
+                        .title {
+                            margin: 5px auto;
+                            font-weight: 600;
+                            font-size: 20px;
+                        }
+
+                        .type-input {
+                            margin-right: 20px;
+                            cursor: pointer;
+                            height: 20px;
+                            width: 20px;
+                            vertical-align: sub;
+
+                            &:focus {
+                                background-color: #000;
+                            }
+                        }
+
+                        .type-label {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .credit-image {
+        .container{
+            .creditimage-inner {
+                background-color: #FFE0AF;
+                border-radius: 20px;
+                padding: 30px 40px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+                margin-bottom: 30px;
+
+                .file-title {
+                    margin: 0;
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+
+                .file-form {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .fileinput-custom {
+                        input[type="file"] {
+                            display: none;
+                        }
+                        display: flex;
+                        width: 300px;
+                        background-color: #FFCBCB;
+                        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+                        padding: 20px 30px;
+                        border-radius: 20px;
+                        height: fit-content;
+                        cursor: pointer;
+                        p {
+                            width: 50%;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            margin: 0
+                        }
+
+                        &:hover {
+                            box-shadow: inset 0px 2px 10px rgba(0, 0, 0, 0.1);
+                        }
+                    }
+
+                    .file-submit {
+                        background: linear-gradient(90deg, #F3DAFF 0%, #9D8DFF 100%);
+                        border: none;
+                        border-radius: 20px;
+                        padding: 10px 40px;
+                        font-size: 20px;
+                        cursor: pointer;
+                        opacity: 0.8;
+                        margin-top: 40px;
+                        width: 200px;
+
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .card-policy {
+        .container {
+            .cardpolicy-inner {
+                background-color: #FFE0AF;
+                border-radius: 20px;
+                padding: 30px 40px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+                margin-bottom: 50px;
+                display: flex;
+                justify-content: space-between;
+
+                .cardpolicy-up {
+                    .policy-input {
+                        height: 20px;
+                        width: 20px;
+                        margin-right: 20px;
+                        vertical-align: sub;
+                        border: 3px solid #000;
+                        cursor: pointer;
+                    }
+    
+                    .policy-label {
+                        font-size: 18px;
+                    }
+                }
+
+                .cardpolicy-down {
+                    margin-top: 30px;
+
+                    .policy-button {
+                        background: linear-gradient(90deg, #F3DAFF 0%, #9D8DFF 100%);
+                        border: none;
+                        border-radius: 20px;
+                        padding: 10px 40px;
+                        font-size: 20px;
+                        cursor: pointer;
+                        opacity: 0.8;
+                        width: 200px;
+
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
